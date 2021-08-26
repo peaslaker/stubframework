@@ -1,0 +1,21 @@
+apisvc:
+    host: localhost
+    port: 3001
+svc1:
+    host: localhost
+    port: 3002
+svc2:
+    host: localhost
+    port: 3003
+apizone:
+    host: localhost
+    port: 3101
+zone1:
+    host: localhost
+    port: 3102
+zone2:
+    host: localhost
+    port: 3103
+mgmtsvc:
+    host: localhost
+    port: 3199
