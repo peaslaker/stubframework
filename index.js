@@ -19,9 +19,9 @@ require('./svc2')
 /* 'harness', 'use' and 'listen' functions */
 const mgmt = require('./mgmt.js')
 
-/* three implementations of managed reverse proxies */ 
+/* three implementations of managed reverse proxies */
 const apiZone = new Koa()
-const zone1  = new Koa()
+const zone1 = new Koa()
 const zone2 = new Koa()
 
 apiZone.use(logger('apiZone'))
@@ -39,8 +39,8 @@ zone2.use(proxy(config.get('svc2')))
 mgmt.use(logger('mgmt'))
 
 if (!module.parent) {
-    apiZone.listen(config.get('apizone').port)
-    zone1.listen(config.get('zone1').port)
-    zone2.listen(config.get('zone2').port)
-    mgmt.listen(config.get('mgmtsvc').port)
+  apiZone.listen(config.get('apizone').port)
+  zone1.listen(config.get('zone1').port)
+  zone2.listen(config.get('zone2').port)
+  mgmt.listen(config.get('mgmtsvc').port)
 }
