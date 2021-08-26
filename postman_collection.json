@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "46767992-6c8d-411d-82c7-a5ba91aea1e8",
+		"name": "stubframework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtain the 'thing' API response",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3101/thing",
+					"host": [
+						"localhost"
+					],
+					"port": "3101",
+					"path": [
+						"thing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtain the 'detail' API response",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3101/detail",
+					"host": [
+						"localhost"
+					],
+					"port": "3101",
+					"path": [
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set 5s delay on svc1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"delayms\":5000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3199/svc1",
+					"host": [
+						"localhost"
+					],
+					"port": "3199",
+					"path": [
+						"svc1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set 15s delay on svc2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"delayms\":15000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3199/svc2",
+					"host": [
+						"localhost"
+					],
+					"port": "3199",
+					"path": [
+						"svc2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset harness behaviour for svc1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3199/svc1",
+					"host": [
+						"localhost"
+					],
+					"port": "3199",
+					"path": [
+						"svc1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset harness behaviour for svc2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3199/svc2",
+					"host": [
+						"localhost"
+					],
+					"port": "3199",
+					"path": [
+						"svc2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show the current harness context",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3199",
+					"host": [
+						"localhost"
+					],
+					"port": "3199"
+				}
+			},
+			"response": []
+		}
+	]
+}
